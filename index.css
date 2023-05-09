@@ -1,0 +1,326 @@
+:root {
+  --brand-primary: #0768ac;
+  --brand-secondary: #03c180;
+  --bg_default: #ffffff;
+  --bg_body: #f0f9ff;
+  --lines-color: #dddddd;
+  --body-text: #333333;
+  --heart-color: #dc143c;
+}
+
+body,
+h1,
+p {
+  margin: 0;
+}
+
+input {
+  padding: 0;
+}
+
+.container-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  background-color: var(--bg_body);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 10px;
+  background-color: var(--bg_default);
+  width: 100%;
+}
+
+.container-header-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.web-topics {
+  color: var(--brand-primary);
+  margin-left: 10px;
+  font-size: 1rem;
+  font-weight: 200;
+  margin-top: 5px;
+}
+
+.icons {
+  margin-right: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 85px;
+}
+
+.button-icon {
+  background-color: var(--bg_default);
+  border-radius: 20%;
+  border: 1px solid var(--lines-color);
+  width: 40px;
+  height: 30px;
+}
+
+ion-icon {
+  font-size: 16px;
+}
+
+.bar-header {
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+  margin-top: 20px;
+}
+
+.left-bar-header {
+  width: 50%;
+  background-color: var(--brand-primary);
+}
+
+.right-bar-header {
+  width: 50%;
+  background-color: var(--brand-secondary);
+}
+
+.welcome-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+  height: 100px;
+  padding-bottom: 5px;
+}
+
+.welcome-header-1 {
+  font-size: 1.2rem;
+  color: var(--brand-secondary);
+  font-weight: 800;
+  margin-right: 10px;
+}
+
+.welcome-header-2 {
+  margin-right: 10px;
+}
+
+.search-bar {
+  height: 100px;
+  margin-top: 20px;
+  background-color: var(--bg_default);
+  width: 80%;
+  border-radius: 8px 8px 8px 8px;
+  box-shadow: 0px 0px 4px 0px var(--lines-color);
+  position: relative;
+}
+
+.search-input {
+  width: 100%;
+  height: 45%;
+  border-width: 0 0 1px 0;
+  border-color: var(--lines-color);
+  border-radius: 8px 8px 0 0;
+  color: grey;
+}
+
+.search-select-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 55%;
+  position: relative;
+}
+
+.search-select {
+  background-color: var(--bg_default);
+  padding-left: 10px;
+  box-sizing: border-box;
+  color: var(--body-text);
+  font-size: 0.9em;
+}
+
+.search-select-1 {
+  width: 50%;
+  border-width: 0 1px 0 0;
+  border-color: var(--lines-color);
+  border-radius: 0 0 0 8px;
+}
+
+.search-select-2 {
+  width: 50%;
+  border-width: 0;
+  border-radius: 0 0 8px 0;
+}
+
+.search-icon {
+  top: 15px;
+  left: 10px;
+  position: absolute;
+}
+
+.select-labels {
+  position: absolute;
+  top: 5px;
+  padding-left: 14px;
+  font-size: 0.7em;
+  color: var(--body-text);
+}
+
+.select-label-filter {
+  left: 50%;
+}
+
+.cards-container-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  height: 66vw;
+  width: 90%;
+  background-color: var(--bg_default);
+  border-radius: 8px;
+  box-shadow: 0px 0px 4px 0px var(--lines-color);
+  margin-top: 7vw;
+}
+
+.background-card {
+  width: 100%;
+  height: 45%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 8px;
+}
+
+.card-info {
+  color: var(--body-text);
+  margin-left: 15px;
+}
+
+.title-card {
+  font-size: 0.8rem;
+  margin-top: 2vh;
+}
+
+.technology-card {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.rating-card {
+  margin-top: 4vh;
+}
+
+.Author-card {
+  color: grey;
+  font-size: 0.8rem;
+  margin-top: 2vh;
+}
+
+.background-card-1 {
+  background-image: url("./assets/html.png");
+}
+
+.Num-Topics-Found {
+  font-size: 1.32rem;
+  color: var(--body-text);
+  align-self: self-start;
+  margin-top: 20px;
+  margin-left: 10vw;
+  font-weight: 700;
+}
+
+.card-1 {
+  margin-top: 0;
+}
+
+.background-card-2 {
+  background-image: url(./assets/css.webp);
+}
+
+.background-card-3 {
+  background-image: url(./assets/javascript.jpg);
+}
+
+.background-card-4 {
+  background-image: url(./assets/jquery.png);
+}
+
+.background-card-5 {
+  background-image: url(./assets/angular.png);
+}
+
+.background-card-6 {
+  background-image: url(./assets/react.webp);
+}
+
+.background-card-7 {
+  background-image: url(./assets/vuejs.jpeg);
+}
+
+.background-card-8 {
+  background-image: url(./assets/nodejs.webp);
+}
+
+.background-card-9 {
+  background-image: url(./assets/expressjs.webp);
+}
+
+.background-card-10 {
+  background-image: url(./assets/ruby.jpeg);
+}
+
+.background-card-11 {
+  background-image: url(./assets/django.jpeg);
+}
+
+.background-card-12 {
+  background-image: url(./assets/flask.webp);
+}
+
+.background-card-13 {
+  background-image: url(./assets/sql.png);
+}
+
+.background-card-14 {
+  background-image: url(./assets/nosql.png);
+}
+
+.background-card-15 {
+  background-image: url(./assets/restapi.jpeg);
+}
+
+.background-card-16 {
+  background-image: url(./assets/graphql.png);
+}
+
+.background-card-17 {
+  background-image: url(./assets/oauth.png);
+}
+
+.background-card-18 {
+  background-image: url(./assets/json.png);
+}
+
+.background-card-19 {
+  background-image: url(./assets/ajax.gif);
+}
+
+.background-card-20 {
+  background-image: url(./assets/websockets.png);
+}
+
+.background-card-21 {
+  background-image: url(./assets/responsive.gif);
+}
