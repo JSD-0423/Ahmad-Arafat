@@ -237,7 +237,8 @@ ion-icon {
 }
 
 .rating-card {
-  margin-top: 4vh;
+  margin-top: 25px;
+  margin-left: 5px;
 }
 
 .Author-card {
@@ -256,6 +257,11 @@ ion-icon {
   align-self: self-start;
   margin-top: 20px;
   font-weight: 800;
+}
+
+.star {
+  color: #e0a500;
+  margin-left: -5px;
 }
 
 .card-1 {
