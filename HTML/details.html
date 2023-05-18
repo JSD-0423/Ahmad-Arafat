@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../CSS/index.css" />
+    <link rel="stylesheet" href="../CSS/details.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.icoo?v=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Web Topics</title>
+  </head>
+  <body>
+    <header>
+      <a href="../index.html"><h1>Web Topics</h1></a>
+      <div class="icons">
+        <button class="icon-button">
+          <ion-icon name="moon-outline"></ion-icon>
+          <label class="button-label">Dark Mode</label>
+        </button>
+        <button class="icon-button">
+          <ion-icon name="heart-outline"></ion-icon>
+          <label class="button-label">Favourites</label>
+        </button>
+      </div>
+    </header>
+    <section>
+      <div class="colorful-bar">
+        <div class="left-colorful-bar"></div>
+        <div class="right-colorful-bar"></div>
+      </div>
+      <div class="welcome">
+        <h6>Welcome to our website!</h6>
+        <p>We have a new design that's fresh, modern, and easy to use</p>
+      </div>
+    </section>
+    <main class="main-details">
+      <div class="main-content">
+        <h3>Web Development Languages</h3>
+        <h2>HTML</h2>
+        <div class="rating">
+          <ion-icon class="star" name="star"></ion-icon>
+          <ion-icon class="star" name="star"></ion-icon>
+          <ion-icon class="star" name="star"></ion-icon>
+          <ion-icon class="star" name="star"></ion-icon>
+          <ion-icon class="star" name="star"></ion-icon>
+        </div>
+        <p>
+          HTML (Hypertext Markup Language) is the standard markup language for
+          creating web pages and other information that can be displayed in a
+          web browser. It provides a structure for content and defines how it
+          should be displayed on a web page, including text, images, and
+          multimedia. HTML is essential for creating static web pages and is a
+          foundational technology for the World Wide Web.
+        </p>
+      </div>
+      <div class="main-content card" href="../HTML/details.html">
+        <div
+          class="card-content"
+          style="background-image: url(../assets/javascript.jpg)"
+        ></div>
+        <div class="card-content">
+          <h4 class="card-info">HTML</h4>
+          <span class="card-info">by</span>
+          <a class="card-info">Sarah Smith</a>
+          <div class="card-info">
+            <div>Intersted about this topic?</div>
+            <button class="big-icon-button icon-button">
+              <label>Add To Favourites</label>
+              <ion-icon name="heart-outline"></ion-icon>
+            </button>
+            <h5>Unlimited Credits</h5>
+          </div>
+        </div>
+      </div>
+      <table>
+        <tr>
+          <td>HTML Sub Topics</td>
+        </tr>
+        <tr>
+          <td>
+            <ion-icon name="checkmark-circle-outline"></ion-icon>HTML syntax and
+            structure
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <ion-icon name="checkmark-circle-outline"></ion-icon>HTML elements
+            and attributs
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <ion-icon name="checkmark-circle-outline"></ion-icon>HTML forms and
+            input elements
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <ion-icon name="checkmark-circle-outline"></ion-icon> HTML tabels
+            and lists
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <ion-icon name="checkmark-circle-outline"></ion-icon> HTML
+            multimedia elements (audio, video, images)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <ion-icon name="checkmark-circle-outline"></ion-icon> Html
+            accessibility and semantic markup
+          </td>
+        </tr>
+      </table>
+    </main>
+    <section class="favourites">
+      <h4>My Favourite Topics</h4>
+      <div class="grid">
+        <div class="small-card">
+          <div
+            style="background-image: url(../assets/react.webp)"
+            class="small-card-content"
+          ></div>
+          <div class="small-card-content">
+            <h4>React</h4>
+            <div class="rating">
+              <ion-icon class="star" name="star"></ion-icon>
+              <ion-icon class="star" name="star"></ion-icon>
+              <ion-icon class="star" name="star"></ion-icon>
+              <ion-icon class="star" name="star"></ion-icon>
+              <ion-icon class="star" name="star"></ion-icon>
+            </div>
+          </div>
+        </div>
+        <div class="small-card">
+          <div
+            style="background-image: url(../assets/cloud.jpeg)"
+            class="small-card-content"
+          ></div>
+          <div class="small-card-content">
+            <h4>Cloud Computing</h4>
+            <div class="rating">
+              <ion-icon class="star" name="star"></ion-icon>
+              <ion-icon class="star" name="star"></ion-icon>
+              <ion-icon class="star" name="star"></ion-icon>
+              <ion-icon class="star" name="star"></ion-icon>
+              <ion-icon class="star" name="star"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <span> Developed with love </span>
+      <ion-icon name="heart" class="heart-icon"></ion-icon>
+      <span>© 2023</span>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="../JS/show_fav.js"></script>
+    <script src="../JS/dark_light_mode.js"></script>
+  </body>
+</html>

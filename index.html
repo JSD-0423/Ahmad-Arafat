@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="./CSS/index.css" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.icoo?v=1" />
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700;800&display=swap"
@@ -16,28 +16,28 @@
   </head>
   <body>
     <header>
-      <div class="header-content">
-        <h1>Web Topics</h1>
-        <div class="icons">
-          <button class="icon-button">
-            <ion-icon name="moon-outline"></ion-icon>
-            <label class="button-label">Dark Mode</label>
-          </button>
-          <button class="icon-button">
-            <ion-icon name="heart-outline"></ion-icon>
-            <label class="button-label">Favourites</label>
-          </button>
-        </div>
+      <h1>Web Topics</h1>
+      <div class="icons">
+        <button class="icon-button">
+          <ion-icon name="moon-outline"></ion-icon>
+          <label class="button-label">Dark Mode</label>
+        </button>
+        <button class="icon-button">
+          <ion-icon name="heart-outline"></ion-icon>
+          <label class="button-label">Favourites</label>
+        </button>
       </div>
-      <div class="header-content colorful-bar">
+    </header>
+    <section>
+      <div class="colorful-bar">
         <div class="left-colorful-bar"></div>
         <div class="right-colorful-bar"></div>
       </div>
-      <div class="header-content">
+      <div class="welcome">
         <h6>Welcome to our website!</h6>
         <p>We have a new design that's fresh, modern, and easy to use</p>
       </div>
-    </header>
+    </section>
     <div class="main-container">
       <section class="search-bar">
         <ion-icon class="search-icon" name="search-outline"></ion-icon>
@@ -69,7 +69,7 @@
       </section>
       <h2>"24" Web Topics Found</h2>
       <main class="grid">
-        <a class="card card-1">
+        <a href="./HTML/details.html" class="card card-1">
           <div
             class="card-content"
             style="background-image: url(./assets/html.png)"
@@ -88,7 +88,7 @@
           </div>
         </a>
 
-        <a class="card">
+        <a href="./HTML/details.html" class="card">
           <div
             class="card-content"
             style="background-image: url(./assets/css.webp)"
@@ -107,7 +107,7 @@
           </div>
         </a>
 
-        <a class="card">
+        <a href="./HTML/details.html" class="card">
           <div
             class="card-content"
             style="background-image: url(./assets/javascript.jpg)"
@@ -126,7 +126,7 @@
           </div>
         </a>
 
-        <a class="card">
+        <a href="./HTML/details.html" class="card">
           <div
             class="card-content"
             style="background-image: url(./assets/responsive.gif)"
@@ -145,7 +145,7 @@
           </div>
         </a>
 
-        <a class="card">
+        <a href="./HTML/details.html" class="card">
           <div
             class="card-content"
             style="background-image: url(./assets/jquery.png)"
@@ -164,7 +164,7 @@
           </div>
         </a>
 
-        <a class="card">
+        <a href="./HTML/details.html" class="card">
           <div
             class="card-content"
             style="background-image: url(./assets/angular.png)"
@@ -183,7 +183,7 @@
           </div>
         </a>
 
-        <a class="card">
+        <a href="./HTML/details.html" class="card">
           <div
             class="card-content"
             style="background-image: url(./assets/react.webp)"
@@ -202,7 +202,7 @@
           </div>
         </a>
 
-        <a class="card">
+        <a href="./HTML/details.html" class="card">
           <div
             class="card-content"
             style="background-image: url(./assets/vuejs.jpeg)"
@@ -221,7 +221,7 @@
           </div>
         </a>
 
-        <a class="card">
+        <a href="./HTML/details.html" class="card">
           <div
             class="card-content"
             style="background-image: url(./assets/nodejs.webp)"
@@ -240,7 +240,7 @@
           </div>
         </a>
 
-        <a class="card">
+        <a href="./HTML/details.html" class="card">
           <div
             class="card-content"
             style="background-image: url(./assets/expressjs.webp)"
@@ -259,7 +259,7 @@
           </div>
         </a>
 
-        <a class="card">
+        <a href="./HTML/details.html" class="card">
           <div
             class="card-content"
             style="background-image: url(./assets/ruby.jpeg)"
@@ -278,7 +278,7 @@
           </div>
         </a>
 
-        <a class="card">
+        <a href="./HTML/details.html" class="card">
           <div
             class="card-content"
             style="background-image: url(./assets/django.jpeg)"
@@ -297,7 +297,7 @@
           </div>
         </a>
 
-        <a class="card">
+        <a href="./HTML/details.html" class="card">
           <div
             class="card-content"
             style="background-image: url(./assets/flask.webp)"
@@ -316,7 +316,7 @@
           </div>
         </a>
 
-        <a class="card">
+        <a href="./HTML/details.html" class="card">
           <div
             class="card-content"
             style="background-image: url(./assets/sql.png)"
@@ -335,7 +335,7 @@
           </div>
         </a>
 
-        <a class="card">
+        <a href="./HTML/details.html" class="card">
           <div
             class="card-content"
             style="background-image: url(./assets/nosql.png)"
@@ -354,7 +354,7 @@
           </div>
         </a>
 
-        <a class="card">
+        <a href="./HTML/details.html" class="card">
           <div
             class="card-content"
             style="background-image: url(./assets/restapi.jpeg)"
@@ -373,7 +373,7 @@
           </div>
         </a>
 
-        <a class="card">
+        <a href="./HTML/details.html" class="card">
           <div
             class="card-content"
             style="background-image: url(./assets/graphql.png)"
@@ -392,7 +392,7 @@
           </div>
         </a>
 
-        <a class="card">
+        <a href="./HTML/details.html" class="card">
           <div
             class="card-content"
             style="background-image: url(./assets/oauth.png)"
@@ -411,7 +411,7 @@
           </div>
         </a>
 
-        <a class="card">
+        <a href="./HTML/details.html" class="card">
           <div
             class="card-content"
             style="background-image: url(./assets/json.png)"
@@ -430,7 +430,7 @@
           </div>
         </a>
 
-        <a class="card">
+        <a href="./HTML/details.html" class="card">
           <div
             class="card-content"
             style="background-image: url(./assets/ajax.gif)"
@@ -449,7 +449,7 @@
           </div>
         </a>
 
-        <a class="card">
+        <a href="./HTML/details.html" class="card">
           <div
             class="card-content"
             style="background-image: url(./assets/websockets.png)"
@@ -488,7 +488,22 @@
             </div>
           </div>
         </div>
-        <div class="small-card"></div>
+        <div class="small-card">
+          <div
+            style="background-image: url(./assets/cloud.jpeg)"
+            class="small-card-content"
+          ></div>
+          <div class="small-card-content">
+            <h4>Cloud Computing</h4>
+            <div class="rating">
+              <ion-icon class="star" name="star"></ion-icon>
+              <ion-icon class="star" name="star"></ion-icon>
+              <ion-icon class="star" name="star"></ion-icon>
+              <ion-icon class="star" name="star"></ion-icon>
+              <ion-icon class="star" name="star"></ion-icon>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <footer>
@@ -504,6 +519,8 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <script src="index.js"></script>
+    <script src="./JS/search.js"></script>
+    <script src="./JS/show_fav.js"></script>
+    <script src="./JS/dark_light_mode.js"></script>
   </body>
 </html>
