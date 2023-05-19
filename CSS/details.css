@@ -207,9 +207,7 @@ footer {
 @media only screen and (max-width: 500px) {
   table,
   .main-content.card {
-    width: 100%;
-    padding-left: var(--mobile-layout-padding);
-    padding-right: var(--mobile-layout-padding);
+    width: 95%;
   }
 }
 
