@@ -18,14 +18,18 @@
   <body>
     <header>
       <h1>Web Topics</h1>
-      <div class="icons">
-        <button class="icon-button">
-          <ion-icon name="moon-outline"></ion-icon>
-          <label class="button-label">Dark Mode</label>
+      <div class="d-flex">
+        <button
+          class="btn me-1 d-flex justify-items justify-content-between align-items-center border"
+        >
+          <ion-icon name="moon-outline" class="me-1"></ion-icon>
+          <label class="d-none d-sm-flex">Dark Mode</label>
         </button>
-        <button class="icon-button">
-          <ion-icon name="heart-outline"></ion-icon>
-          <label class="button-label">Favourites</label>
+        <button
+          class="btn d-flex justify-items justify-content-between align-items-center border"
+        >
+          <ion-icon name="heart-outline" class="me-1"></ion-icon>
+          <label class="d-none d-sm-flex">Favourites</label>
         </button>
       </div>
     </header>
@@ -35,11 +39,11 @@
         <div class="right-colorful-bar"></div>
       </div>
       <div class="welcome">
-        <h6>Welcome to our website!</h6>
+        <h6 class="text-secondary">Welcome to our website!</h6>
         <p>We have a new design that's fresh, modern, and easy to use</p>
       </div>
     </section>
-    <div class="main-container">
+    <div class="pe-3 ps-3 ps-md-5 pe-md-5 pe-xl-7 ps-xl-7 d-flex flex-column">
       <section class="search-bar">
         <ion-icon class="search-icon" name="search-outline"></ion-icon>
         <input
@@ -69,7 +73,7 @@
         </div>
       </section>
       <h2>"24" Web Topics Found</h2>
-      <main class="m-0">
+      <main class="mt-5">
         <div
           class="row d-flex row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5 g-4"
         >
@@ -91,7 +95,7 @@
             </a>
           </div>
 
-          <div class="col">
+          <div>
             <a href="./HTML/details.html" class="card">
               <img class="card-img-top" src="./assets/css.webp" />
               <div class="card-body">
@@ -109,7 +113,7 @@
             </a>
           </div>
 
-          <div class="col">
+          <div>
             <a href="./HTML/details.html" class="card">
               <img class="card-img-top" src="./assets/javascript.jpg" />
               <div class="card-body">
@@ -127,7 +131,7 @@
             </a>
           </div>
 
-          <div class="col">
+          <div>
             <a href="./HTML/details.html" class="card">
               <img class="card-img-top" src="./assets/responsive.gif" />
               <div class="card-body">
@@ -145,7 +149,7 @@
             </a>
           </div>
 
-          <div class="col">
+          <div>
             <a href="./HTML/details.html" class="card">
               <img class="card-img-top" src="./assets/jquery.png" />
               <div class="card-body">
@@ -162,261 +166,292 @@
               </div>
             </a>
           </div>
-          <!-- <a href="./HTML/details.html" class="card">
-            <img class="card-img-top" src="assets/angular.png" />
-            <div class="card-body">
-              <h3 class="card-info">Web Development Languages</h3>
-              <h4 class="card-info">HTML</h4>
-              <div class="rating card-info">
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star-outline"></ion-icon>
+          <div>
+            <a href="./HTML/details.html" class="card">
+              <img class="card-img-top" src="assets/angular.png" />
+              <div class="card-body">
+                <h3 class="card-info">Web Development Languages</h3>
+                <h4 class="card-info">HTML</h4>
+                <div class="rating card-info">
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star-outline"></ion-icon>
+                </div>
+                <h5 class="card-info">Author: Sarah Smith</h5>
               </div>
-              <h5 class="card-info">Author: Sarah Smith</h5>
-            </div>
-          </a>
+            </a>
+          </div>
+          <div>
+            <a href="./HTML/details.html" class="card">
+              <img class="card-img-top" src="./assets/react.webp" />
+              <div class="card-body">
+                <h3 class="card-info">Web Development Languages</h3>
+                <h4 class="card-info">HTML</h4>
+                <div class="rating card-info">
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star-outline"></ion-icon>
+                </div>
+                <h5 class="card-info">Author: Sarah Smith</h5>
+              </div>
+            </a>
+          </div>
 
-          <a href="./HTML/details.html" class="card">
-            <img class="card-img-top" src="./assets/react.webp" />
-            <div class="card-body">
-              <h3 class="card-info">Web Development Languages</h3>
-              <h4 class="card-info">HTML</h4>
-              <div class="rating card-info">
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star-outline"></ion-icon>
+          <div>
+            <a href="./HTML/details.html" class="card">
+              <img class="card-img-top" src="assets/vuejs.jpeg" />
+              <div class="card-body">
+                <h3 class="card-info">Web Development Languages</h3>
+                <h4 class="card-info">HTML</h4>
+                <div class="rating card-info">
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star-outline"></ion-icon>
+                </div>
+                <h5 class="card-info">Author: Sarah Smith</h5>
               </div>
-              <h5 class="card-info">Author: Sarah Smith</h5>
-            </div>
-          </a>
+            </a>
+          </div>
 
-          <a href="./HTML/details.html" class="card">
-            <img class="card-img-top" src="assets/vuejs.jpeg" />
-            <div class="card-body">
-              <h3 class="card-info">Web Development Languages</h3>
-              <h4 class="card-info">HTML</h4>
-              <div class="rating card-info">
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star-outline"></ion-icon>
+          <div>
+            <a href="./HTML/details.html" class="card">
+              <img class="card-img-top" src="assets/nodejs.webp" />
+              <div class="card-body">
+                <h3 class="card-info">Web Development Languages</h3>
+                <h4 class="card-info">HTML</h4>
+                <div class="rating card-info">
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star-outline"></ion-icon>
+                </div>
+                <h5 class="card-info">Author: Sarah Smith</h5>
               </div>
-              <h5 class="card-info">Author: Sarah Smith</h5>
-            </div>
-          </a>
+            </a>
+          </div>
 
-          <a href="./HTML/details.html" class="card">
-            <img class="card-img-top" src="assets/nodejs.webp" />
-            <div class="card-body">
-              <h3 class="card-info">Web Development Languages</h3>
-              <h4 class="card-info">HTML</h4>
-              <div class="rating card-info">
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star-outline"></ion-icon>
+          <div>
+            <a href="./HTML/details.html" class="card">
+              <img class="card-img-top" src="./assets/expressjs.webp" />
+              <div class="card-body">
+                <h3 class="card-info">Web Development Languages</h3>
+                <h4 class="card-info">HTML</h4>
+                <div class="rating card-info">
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star-outline"></ion-icon>
+                </div>
+                <h5 class="card-info">Author: Sarah Smith</h5>
               </div>
-              <h5 class="card-info">Author: Sarah Smith</h5>
-            </div>
-          </a>
+            </a>
+          </div>
 
-          <a href="./HTML/details.html" class="card">
-            <img class="card-img-top" src="./assets/expressjs.webp" />
-            <div class="card-body">
-              <h3 class="card-info">Web Development Languages</h3>
-              <h4 class="card-info">HTML</h4>
-              <div class="rating card-info">
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star-outline"></ion-icon>
+          <div>
+            <a href="./HTML/details.html" class="card">
+              <img class="card-img-top" src="./assets/ruby.jpeg" />
+              <div class="card-body">
+                <h3 class="card-info">Web Development Languages</h3>
+                <h4 class="card-info">HTML</h4>
+                <div class="rating card-info">
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star-outline"></ion-icon>
+                </div>
+                <h5 class="card-info">Author: Sarah Smith</h5>
               </div>
-              <h5 class="card-info">Author: Sarah Smith</h5>
-            </div>
-          </a>
+            </a>
+          </div>
 
-          <a href="./HTML/details.html" class="card">
-            <img class="card-img-top" src="./assets/ruby.jpeg" />
-            <div class="card-body">
-              <h3 class="card-info">Web Development Languages</h3>
-              <h4 class="card-info">HTML</h4>
-              <div class="rating card-info">
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star-outline"></ion-icon>
+          <div>
+            <a href="./HTML/details.html" class="card">
+              <img class="card-img-top" src="./assets/django.jpeg" />
+              <div class="card-body">
+                <h3 class="card-info">Web Development Languages</h3>
+                <h4 class="card-info">HTML</h4>
+                <div class="rating card-info">
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star-outline"></ion-icon>
+                </div>
+                <h5 class="card-info">Author: Sarah Smith</h5>
               </div>
-              <h5 class="card-info">Author: Sarah Smith</h5>
-            </div>
-          </a>
+            </a>
+          </div>
 
-          <a href="./HTML/details.html" class="card">
-            <img class="card-img-top" src="./assets/django.jpeg" />
-            <div class="card-body">
-              <h3 class="card-info">Web Development Languages</h3>
-              <h4 class="card-info">HTML</h4>
-              <div class="rating card-info">
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star-outline"></ion-icon>
+          <div>
+            <a href="./HTML/details.html" class="card">
+              <img class="card-img-top" src="./assets/flask.webp" />
+              <div class="card-body">
+                <h3 class="card-info">Web Development Languages</h3>
+                <h4 class="card-info">HTML</h4>
+                <div class="rating card-info">
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star-outline"></ion-icon>
+                </div>
+                <h5 class="card-info">Author: Sarah Smith</h5>
               </div>
-              <h5 class="card-info">Author: Sarah Smith</h5>
-            </div>
-          </a>
+            </a>
+          </div>
 
-          <a href="./HTML/details.html" class="card">
-            <img class="card-img-top" src="./assets/flask.webp" />
-            <div class="card-body">
-              <h3 class="card-info">Web Development Languages</h3>
-              <h4 class="card-info">HTML</h4>
-              <div class="rating card-info">
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star-outline"></ion-icon>
+          <div>
+            <a href="./HTML/details.html" class="card">
+              <img class="card-img-top" src="./assets/sql.png" />
+              <div class="card-body">
+                <h3 class="card-info">Web Development Languages</h3>
+                <h4 class="card-info">HTML</h4>
+                <div class="rating card-info">
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star-outline"></ion-icon>
+                </div>
+                <h5 class="card-info">Author: Sarah Smith</h5>
               </div>
-              <h5 class="card-info">Author: Sarah Smith</h5>
-            </div>
-          </a>
+            </a>
+          </div>
 
-          <a href="./HTML/details.html" class="card">
-            <img class="card-img-top" src="./assets/sql.png" />
-            <div class="card-body">
-              <h3 class="card-info">Web Development Languages</h3>
-              <h4 class="card-info">HTML</h4>
-              <div class="rating card-info">
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star-outline"></ion-icon>
+          <div>
+            <a href="./HTML/details.html" class="card">
+              <img class="card-img-top" src="./assets/nosql.png" />
+              <div class="card-body">
+                <h3 class="card-info">Web Development Languages</h3>
+                <h4 class="card-info">HTML</h4>
+                <div class="rating card-info">
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star-outline"></ion-icon>
+                </div>
+                <h5 class="card-info">Author: Sarah Smith</h5>
               </div>
-              <h5 class="card-info">Author: Sarah Smith</h5>
-            </div>
-          </a>
+            </a>
+          </div>
 
-          <a href="./HTML/details.html" class="card">
-            <img class="card-img-top" src="./assets/nosql.png" />
-            <div class="card-body">
-              <h3 class="card-info">Web Development Languages</h3>
-              <h4 class="card-info">HTML</h4>
-              <div class="rating card-info">
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star-outline"></ion-icon>
+          <div>
+            <a href="./HTML/details.html" class="card">
+              <img class="card-img-top" src="./assets/restapi.jpeg" />
+              <div class="card-body">
+                <h3 class="card-info">Web Development Languages</h3>
+                <h4 class="card-info">HTML</h4>
+                <div class="rating card-info">
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star-outline"></ion-icon>
+                </div>
+                <h5 class="card-info">Author: Sarah Smith</h5>
               </div>
-              <h5 class="card-info">Author: Sarah Smith</h5>
-            </div>
-          </a>
+            </a>
+          </div>
 
-          <a href="./HTML/details.html" class="card">
-            <img class="card-img-top" src="./assets/restapi.jpeg" />
-            <div class="card-body">
-              <h3 class="card-info">Web Development Languages</h3>
-              <h4 class="card-info">HTML</h4>
-              <div class="rating card-info">
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star-outline"></ion-icon>
+          <div>
+            <a href="./HTML/details.html" class="card">
+              <img class="card-img-top" src="./assets/graphql.png" />
+              <div class="card-body">
+                <h3 class="card-info">Web Development Languages</h3>
+                <h4 class="card-info">HTML</h4>
+                <div class="rating card-info">
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star-outline"></ion-icon>
+                </div>
+                <h5 class="card-info">Author: Sarah Smith</h5>
               </div>
-              <h5 class="card-info">Author: Sarah Smith</h5>
-            </div>
-          </a>
+            </a>
+          </div>
 
-          <a href="./HTML/details.html" class="card">
-            <img class="card-img-top" src="./assets/graphql.png" />
-            <div class="card-body">
-              <h3 class="card-info">Web Development Languages</h3>
-              <h4 class="card-info">HTML</h4>
-              <div class="rating card-info">
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star-outline"></ion-icon>
+          <div>
+            <a href="./HTML/details.html" class="card">
+              <img class="card-img-top" src="./assets/oauth.png" />
+              <div class="card-body">
+                <h3 class="card-info">Web Development Languages</h3>
+                <h4 class="card-info">HTML</h4>
+                <div class="rating card-info">
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star-outline"></ion-icon>
+                </div>
+                <h5 class="card-info">Author: Sarah Smith</h5>
               </div>
-              <h5 class="card-info">Author: Sarah Smith</h5>
-            </div>
-          </a>
+            </a>
+          </div>
 
-          <a href="./HTML/details.html" class="card">
-            <img class="card-img-top" src="./assets/oauth.png" />
-            <div class="card-body">
-              <h3 class="card-info">Web Development Languages</h3>
-              <h4 class="card-info">HTML</h4>
-              <div class="rating card-info">
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star-outline"></ion-icon>
+          <div>
+            <a href="./HTML/details.html" class="card">
+              <img class="card-img-top" src="./assets/json.png" />
+              <div class="card-body">
+                <h3 class="card-info">Web Development Languages</h3>
+                <h4 class="card-info">HTML</h4>
+                <div class="rating card-info">
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star-outline"></ion-icon>
+                </div>
+                <h5 class="card-info">Author: Sarah Smith</h5>
               </div>
-              <h5 class="card-info">Author: Sarah Smith</h5>
-            </div>
-          </a>
+            </a>
+          </div>
 
-          <a href="./HTML/details.html" class="card">
-            <img class="card-img-top" src="./assets/json.png" />
-            <div class="card-body">
-              <h3 class="card-info">Web Development Languages</h3>
-              <h4 class="card-info">HTML</h4>
-              <div class="rating card-info">
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star-outline"></ion-icon>
+          <div>
+            <a href="./HTML/details.html" class="card">
+              <img class="card-img-top" src="./assets/ajax.gif" />
+              <div class="card-body">
+                <h3 class="card-info">Web Development Languages</h3>
+                <h4 class="card-info">HTML</h4>
+                <div class="rating card-info">
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star-outline"></ion-icon>
+                </div>
+                <h5 class="card-info">Author: Sarah Smith</h5>
               </div>
-              <h5 class="card-info">Author: Sarah Smith</h5>
-            </div>
-          </a>
+            </a>
+          </div>
 
-          <a href="./HTML/details.html" class="card">
-            <img class="card-img-top" src="./assets/ajax.gif" />
-            <div class="card-body">
-              <h3 class="card-info">Web Development Languages</h3>
-              <h4 class="card-info">HTML</h4>
-              <div class="rating card-info">
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star-outline"></ion-icon>
+          <div>
+            <a href="./HTML/details.html" class="card">
+              <img class="card-img-top" src="./assets/websockets.png" />
+              <div class="card-body">
+                <h3 class="card-info">Web Development Languages</h3>
+                <h4 class="card-info">HTML</h4>
+                <div class="rating card-info">
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star-outline"></ion-icon>
+                </div>
+                <h5 class="card-info">Author: Sarah Smith</h5>
               </div>
-              <h5 class="card-info">Author: Sarah Smith</h5>
-            </div>
-          </a>
-
-          <a href="./HTML/details.html" class="card">
-            <img class="card-img-top" src="./assets/websockets.png" />
-            <div class="card-body">
-              <h3 class="card-info">Web Development Languages</h3>
-              <h4 class="card-info">HTML</h4>
-              <div class="rating card-info">
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star"></ion-icon>
-                <ion-icon class="star" name="star-outline"></ion-icon>
-              </div>
-              <h5 class="card-info">Author: Sarah Smith</h5>
-            </div>
-          </a> -->
+            </a>
+          </div>
         </div>
       </main>
     </div>

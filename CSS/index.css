@@ -32,15 +32,6 @@ a {
   text-decoration: none;
 }
 
-.main-container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  background-color: var(--bg-body);
-  padding-left: var(--mobile-layout-padding);
-  padding-right: var(--mobile-layout-padding);
-}
-
 header {
   display: flex;
   justify-content: space-between;
@@ -133,7 +124,6 @@ header + section {
 
 h6 {
   font-size: 1.3rem;
-  color: var(--brand-secondary);
   font-weight: 800;
   margin: 8px 10px 0px 0px !important;
   line-height: 0.8;
@@ -391,11 +381,6 @@ footer {
     margin-top: 9px;
   } */
 
-  .main-container {
-    padding-left: var(--tablet-layout-padding);
-    padding-right: var(--tablet-layout-padding);
-  }
-
   h1 {
     color: var(--brand-primary);
     font-size: 1rem;
@@ -487,11 +472,6 @@ footer {
 /* big Screens */
 
 @media only screen and (min-width: 1200px) {
-  .main-container {
-    padding-left: var(--Desktop-layout-padding);
-    padding-right: var(--Desktop-layout-padding);
-  }
-
   header {
     padding-left: var(--Desktop-layout-padding);
     padding-right: var(--Desktop-layout-padding);

@@ -1,7 +1,25 @@
 $enable-rfs: false;
 
-$card-border: 0;
+//headings
+$headings-margin-bottom: 0;
 
-$container-padding: 0;
+// colors
+$primary: #0768ac;
+$secondary: #03c180;
+
+$color-mode-type: data;
+
+//spacers
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer * 0.93,
+  4: $spacer * 1.5,
+  5: $spacer * 1.56,
+  6: $spacer * 3,
+  7: $spacer * 3.37,
+);
 
 @import "../node_modules/bootstrap/scss/bootstrap";
