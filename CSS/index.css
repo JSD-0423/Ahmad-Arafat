@@ -1,4 +1,4 @@
-:root {
+body {
   --brand-primary: #0768ac;
   --brand-secondary: #03c180;
   --bg-default: #ffffff;
@@ -10,14 +10,40 @@
   --Desktop-layout-padding: 54px;
   --tablet-layout-padding: 25px;
   --shadow: #dddddd;
-  --mix-secondary-primary: #06869d;
-  --mix-body-text-lines-color: #737373;
+  --details-dark-section: #282828;
+  --body-text-dark: #ededed;
+}
+
+body.dark {
+  --bg-default: #1a1a1a;
+  --bg-body: #282828;
+  --lines-color: #000000;
+  --body-text: #ededed;
+  --shadow: #1a1a1a;
+  --details-dark-section: #333333;
+}
+
+body.dark .button-label.light {
+  display: none;
+}
+
+body .button-label.dark {
+  display: none;
+}
+
+body.dark .button-label.dark {
+  display: inline;
+}
+
+body .button-label.light {
+  display: inline;
 }
 
 body {
   background-color: var(--bg-body);
   padding-bottom: 40px;
 }
+
 input {
   padding: 0;
 }
@@ -161,7 +187,7 @@ p {
   border-width: 0 0 1px 0;
   border-color: var(--lines-color);
   border-radius: 8px 8px 0 0;
-  color: var(--mix-body-text-lines-color);
+  color: #737373;
   font-weight: 400;
   font-size: 0.95rem;
   background-color: var(--bg-default);

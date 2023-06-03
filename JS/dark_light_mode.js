@@ -1,44 +1,43 @@
-let isDark = false;
-let isFav = false;
-let root = document.querySelector(":root");
-
-const lightModeColors = {
-  "brand-primary": "#0768ac",
-  "brand-secondary": "#03c180",
-  "bg-default": "#ffffff",
-  "bg-body": "#f0f9ff",
-  "lines-color": "#dddddd",
-  "body-text": "#333333",
-  "heart-color": "#dc143c",
-  shadow: "#dddddd",
-  "details-dark-section": "#282828",
-};
-
-const darkModeColors = {
-  "brand-primary": "#0768AC",
-  "brand-secondary": "#03C180",
-  "bg-default": "#1A1A1A",
-  "bg-body": "#282828",
-  "lines-color": "#000000",
-  "body-text": "#EDEDED",
-  "heart-color": "#DC143C",
-  shadow: "#1A1A1A",
-  "details-dark-section": "#333333",
-};
-
-let darkModeButton = document.getElementsByClassName("icon-button")[0];
-
-//dark mode
-darkModeButton.addEventListener("click", () => {
-  isDark = !isDark;
-
-  if (isDark) {
-    for (prop in darkModeColors) {
-      root.style.setProperty(`--${prop}`, darkModeColors[prop]);
-    }
-  } else {
-    for (prop in lightModeColors) {
-      root.style.setProperty(`--${prop}`, lightModeColors[prop]);
-    }
+const runColorMode = (cb) => {
+  if (!window.matchMedia) {
+    return;
   }
-});
+  const query = window.matchMedia("(prefers-color-scheme: dark)");
+  cb(query.matches);
+  query.addEventListener("change", (e) => cb(e.matches));
+};
+
+const checkLocalStorge = () => {
+  if (localStorage.getItem("dark-mode") !== null) {
+    const isDarkMode = localStorage.getItem("dark-mode");
+    setInitialTheme(isDarkMode);
+  }
+};
+
+const setInitialTheme = (isDarkMode) => {
+  if (isDarkMode) {
+    document.body.classList.add("dark");
+  } else {
+    document.body.classList.remove("dark");
+  }
+};
+
+const activateButton = () => {
+  let darkModeButton = document.getElementsByClassName("icon-button")[0];
+  darkModeButton.addEventListener("click", () => {
+    const isDarkMode = document.querySelector("body").classList.toggle("dark");
+    try {
+      if (isDarkMode) localStorage.setItem("dark-mode", "enabled");
+      else localStorage.setItem("dark-mode", "");
+    } catch {
+      //showError("sorry we can't save your dark mode state as your local storge is full");
+      console.log(
+        "sorry We can't save your dark mode state as your local storge is full"
+      );
+    }
+  });
+};
+
+runColorMode(setInitialTheme);
+checkLocalStorge();
+activateButton();
