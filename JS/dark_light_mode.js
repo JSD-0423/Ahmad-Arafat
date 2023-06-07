@@ -7,10 +7,10 @@ const runColorMode = (cb) => {
   query.addEventListener("change", (e) => cb(e.matches));
 };
 
-const checkLocalStorge = () => {
+const checkLocalStorge = (cb) => {
   if (localStorage.getItem("dark-mode") !== null) {
     const isDarkMode = localStorage.getItem("dark-mode");
-    setInitialTheme(isDarkMode);
+    cb(isDarkMode);
   }
 };
 
@@ -38,6 +38,9 @@ const activateButton = () => {
   });
 };
 
+//set to mode perfrence if exists
 runColorMode(setInitialTheme);
-checkLocalStorge();
+//override mode preferance with local storge if exists
+checkLocalStorge(setInitialTheme);
+//Attach event listener to dark-mode button
 activateButton();

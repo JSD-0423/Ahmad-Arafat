@@ -20,8 +20,8 @@
       <div class="icons">
         <button class="icon-button">
           <ion-icon name="moon-outline"></ion-icon>
-          <label class="button-label light">Light Mode</label>
-          <label class="button-label dark">Dark Mode</label>
+          <label class="button-label light">Dark Mode</label>
+          <label class="button-label dark">Light Mode</label>
         </button>
         <button class="icon-button">
           <ion-icon name="heart-outline"></ion-icon>
@@ -42,18 +42,14 @@
     <div class="main-container">
       <section class="search-bar">
         <ion-icon class="search-icon" name="search-outline"></ion-icon>
-        <input
-          value="          Search the website..."
-          type="text"
-          class="search-input"
-        />
+        <input type="text" class="search-input" />
         <div class="search-select-container">
           <label class="select-labels select-label-sort" for="sort"
             >Sort By:</label
           >
           <select name="sort" id="sort" class="search-select search-select-1">
-            <option value="default">Default</option>
-            <option value="Date">Date</option>
+            <option value="default">Author Name</option>
+            <option value="Date">Topic Title</option>
           </select>
           <label class="select-labels select-label-filter" for="filter"
             >Filter By:</label
@@ -68,9 +64,9 @@
           </select>
         </div>
       </section>
-      <h2>"24" Web Topics Found</h2>
+      <h2><span></span> Web Topics Found</h2>
       <main class="grid">
-        <a href="./HTML/details.html" class="card card-1">
+        <!-- <a href="./HTML/details.html" class="card card-1">
           <div
             class="card-content"
             style="background-image: url(./assets/html.png)"
@@ -106,368 +102,7 @@
             </div>
             <h5 class="card-info">Author: David Lee</h5>
           </div>
-        </a>
-
-        <a href="./HTML/details.html" class="card">
-          <div
-            class="card-content"
-            style="background-image: url(./assets/javascript.jpg)"
-          ></div>
-          <div class="card-content">
-            <h3 class="card-info">Web Development Languages</h3>
-            <h4 class="card-info">HTML</h4>
-            <div class="rating card-info">
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-            </div>
-            <h5 class="card-info">Author: Sarah Smith</h5>
-          </div>
-        </a>
-
-        <a href="./HTML/details.html" class="card">
-          <div
-            class="card-content"
-            style="background-image: url(./assets/responsive.gif)"
-          ></div>
-          <div class="card-content">
-            <h3 class="card-info">Web Development Languages</h3>
-            <h4 class="card-info">HTML</h4>
-            <div class="rating card-info">
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star-outline"></ion-icon>
-            </div>
-            <h5 class="card-info">Author: Sarah Smith</h5>
-          </div>
-        </a>
-
-        <a href="./HTML/details.html" class="card">
-          <div
-            class="card-content"
-            style="background-image: url(./assets/jquery.png)"
-          ></div>
-          <div class="card-content">
-            <h3 class="card-info">Web Development Languages</h3>
-            <h4 class="card-info">HTML</h4>
-            <div class="rating card-info">
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star-outline"></ion-icon>
-            </div>
-            <h5 class="card-info">Author: Sarah Smith</h5>
-          </div>
-        </a>
-
-        <a href="./HTML/details.html" class="card">
-          <div
-            class="card-content"
-            style="background-image: url(./assets/angular.png)"
-          ></div>
-          <div class="card-content">
-            <h3 class="card-info">Web Development Languages</h3>
-            <h4 class="card-info">HTML</h4>
-            <div class="rating card-info">
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star-outline"></ion-icon>
-            </div>
-            <h5 class="card-info">Author: Sarah Smith</h5>
-          </div>
-        </a>
-
-        <a href="./HTML/details.html" class="card">
-          <div
-            class="card-content"
-            style="background-image: url(./assets/react.webp)"
-          ></div>
-          <div class="card-content">
-            <h3 class="card-info">Web Development Languages</h3>
-            <h4 class="card-info">HTML</h4>
-            <div class="rating card-info">
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star-outline"></ion-icon>
-            </div>
-            <h5 class="card-info">Author: Sarah Smith</h5>
-          </div>
-        </a>
-
-        <a href="./HTML/details.html" class="card">
-          <div
-            class="card-content"
-            style="background-image: url(./assets/vuejs.jpeg)"
-          ></div>
-          <div class="card-content">
-            <h3 class="card-info">Web Development Languages</h3>
-            <h4 class="card-info">HTML</h4>
-            <div class="rating card-info">
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star-outline"></ion-icon>
-            </div>
-            <h5 class="card-info">Author: Sarah Smith</h5>
-          </div>
-        </a>
-
-        <a href="./HTML/details.html" class="card">
-          <div
-            class="card-content"
-            style="background-image: url(./assets/nodejs.webp)"
-          ></div>
-          <div class="card-content">
-            <h3 class="card-info">Web Development Languages</h3>
-            <h4 class="card-info">HTML</h4>
-            <div class="rating card-info">
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star-outline"></ion-icon>
-            </div>
-            <h5 class="card-info">Author: Sarah Smith</h5>
-          </div>
-        </a>
-
-        <a href="./HTML/details.html" class="card">
-          <div
-            class="card-content"
-            style="background-image: url(./assets/expressjs.webp)"
-          ></div>
-          <div class="card-content">
-            <h3 class="card-info">Web Development Languages</h3>
-            <h4 class="card-info">HTML</h4>
-            <div class="rating card-info">
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star-outline"></ion-icon>
-            </div>
-            <h5 class="card-info">Author: Sarah Smith</h5>
-          </div>
-        </a>
-
-        <a href="./HTML/details.html" class="card">
-          <div
-            class="card-content"
-            style="background-image: url(./assets/ruby.jpeg)"
-          ></div>
-          <div class="card-content">
-            <h3 class="card-info">Web Development Languages</h3>
-            <h4 class="card-info">HTML</h4>
-            <div class="rating card-info">
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star-outline"></ion-icon>
-            </div>
-            <h5 class="card-info">Author: Sarah Smith</h5>
-          </div>
-        </a>
-
-        <a href="./HTML/details.html" class="card">
-          <div
-            class="card-content"
-            style="background-image: url(./assets/django.jpeg)"
-          ></div>
-          <div class="card-content">
-            <h3 class="card-info">Web Development Languages</h3>
-            <h4 class="card-info">HTML</h4>
-            <div class="rating card-info">
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star-outline"></ion-icon>
-            </div>
-            <h5 class="card-info">Author: Sarah Smith</h5>
-          </div>
-        </a>
-
-        <a href="./HTML/details.html" class="card">
-          <div
-            class="card-content"
-            style="background-image: url(./assets/flask.webp)"
-          ></div>
-          <div class="card-content">
-            <h3 class="card-info">Web Development Languages</h3>
-            <h4 class="card-info">HTML</h4>
-            <div class="rating card-info">
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star-outline"></ion-icon>
-            </div>
-            <h5 class="card-info">Author: Sarah Smith</h5>
-          </div>
-        </a>
-
-        <a href="./HTML/details.html" class="card">
-          <div
-            class="card-content"
-            style="background-image: url(./assets/sql.png)"
-          ></div>
-          <div class="card-content">
-            <h3 class="card-info">Web Development Languages</h3>
-            <h4 class="card-info">HTML</h4>
-            <div class="rating card-info">
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star-outline"></ion-icon>
-            </div>
-            <h5 class="card-info">Author: Sarah Smith</h5>
-          </div>
-        </a>
-
-        <a href="./HTML/details.html" class="card">
-          <div
-            class="card-content"
-            style="background-image: url(./assets/nosql.png)"
-          ></div>
-          <div class="card-content">
-            <h3 class="card-info">Web Development Languages</h3>
-            <h4 class="card-info">HTML</h4>
-            <div class="rating card-info">
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star-outline"></ion-icon>
-            </div>
-            <h5 class="card-info">Author: Sarah Smith</h5>
-          </div>
-        </a>
-
-        <a href="./HTML/details.html" class="card">
-          <div
-            class="card-content"
-            style="background-image: url(./assets/restapi.jpeg)"
-          ></div>
-          <div class="card-content">
-            <h3 class="card-info">Web Development Languages</h3>
-            <h4 class="card-info">HTML</h4>
-            <div class="rating card-info">
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star-outline"></ion-icon>
-            </div>
-            <h5 class="card-info">Author: Sarah Smith</h5>
-          </div>
-        </a>
-
-        <a href="./HTML/details.html" class="card">
-          <div
-            class="card-content"
-            style="background-image: url(./assets/graphql.png)"
-          ></div>
-          <div class="card-content">
-            <h3 class="card-info">Web Development Languages</h3>
-            <h4 class="card-info">HTML</h4>
-            <div class="rating card-info">
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star-outline"></ion-icon>
-            </div>
-            <h5 class="card-info">Author: Sarah Smith</h5>
-          </div>
-        </a>
-
-        <a href="./HTML/details.html" class="card">
-          <div
-            class="card-content"
-            style="background-image: url(./assets/oauth.png)"
-          ></div>
-          <div class="card-content">
-            <h3 class="card-info">Web Development Languages</h3>
-            <h4 class="card-info">HTML</h4>
-            <div class="rating card-info">
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star-outline"></ion-icon>
-            </div>
-            <h5 class="card-info">Author: Sarah Smith</h5>
-          </div>
-        </a>
-
-        <a href="./HTML/details.html" class="card">
-          <div
-            class="card-content"
-            style="background-image: url(./assets/json.png)"
-          ></div>
-          <div class="card-content">
-            <h3 class="card-info">Web Development Languages</h3>
-            <h4 class="card-info">HTML</h4>
-            <div class="rating card-info">
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star-outline"></ion-icon>
-            </div>
-            <h5 class="card-info">Author: Sarah Smith</h5>
-          </div>
-        </a>
-
-        <a href="./HTML/details.html" class="card">
-          <div
-            class="card-content"
-            style="background-image: url(./assets/ajax.gif)"
-          ></div>
-          <div class="card-content">
-            <h3 class="card-info">Web Development Languages</h3>
-            <h4 class="card-info">HTML</h4>
-            <div class="rating card-info">
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star-outline"></ion-icon>
-            </div>
-            <h5 class="card-info">Author: Sarah Smith</h5>
-          </div>
-        </a>
-
-        <a href="./HTML/details.html" class="card">
-          <div
-            class="card-content"
-            style="background-image: url(./assets/websockets.png)"
-          ></div>
-          <div class="card-content">
-            <h3 class="card-info">Web Development Languages</h3>
-            <h4 class="card-info">HTML</h4>
-            <div class="rating card-info">
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star"></ion-icon>
-              <ion-icon class="star" name="star-outline"></ion-icon>
-            </div>
-            <h5 class="card-info">Author: Sarah Smith</h5>
-          </div>
-        </a>
+        </a> -->
       </main>
     </div>
     <section class="favourites">
@@ -520,8 +155,9 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <script src="./JS/search.js"></script>
     <script src="./JS/show_fav.js"></script>
     <script src="./JS/dark_light_mode.js"></script>
+    <script type="module" src="./JS/Home/index.js"></script>
+    <script type="module" src="../JS/Favorites/index.js"></script>
   </body>
 </html>

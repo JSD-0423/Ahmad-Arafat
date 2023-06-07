@@ -23,22 +23,6 @@ body.dark {
   --details-dark-section: #333333;
 }
 
-body.dark .button-label.light {
-  display: none;
-}
-
-body .button-label.dark {
-  display: none;
-}
-
-body.dark .button-label.dark {
-  display: inline;
-}
-
-body .button-label.light {
-  display: inline;
-}
-
 body {
   background-color: var(--bg-body);
   padding-bottom: 40px;
@@ -56,6 +40,7 @@ input {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .main-container {
@@ -433,6 +418,21 @@ footer {
     width: 30%;
     margin-top: 9px;
   } */
+  body.dark .button-label.light {
+    display: none;
+  }
+
+  body .button-label.dark {
+    display: none;
+  }
+
+  body.dark .button-label.dark {
+    display: inline;
+  }
+
+  body .button-label.light {
+    display: inline;
+  }
 
   .main-container {
     padding-left: var(--tablet-layout-padding);
