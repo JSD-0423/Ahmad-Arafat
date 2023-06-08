@@ -1,3 +1,5 @@
+import createStarRating from "../Utilities/createStarsRating.js";
+
 const createSmallCard = (data) => {
   const smallCard = document.createElement("div");
   smallCard.classList.add("small-card");
@@ -22,9 +24,7 @@ const createSmallCard = (data) => {
   topic.append(data.topic);
   info.appendChild(topic);
 
-  const rating = document.createElement("div");
-  rating.classList.add("rating");
-  rating.append(data.rating);
+  const rating = createStarRating(data.rating);
   info.appendChild(rating);
 
   return smallCard;

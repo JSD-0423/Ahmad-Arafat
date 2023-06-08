@@ -1,4 +1,5 @@
 import fetchData from "../Utilities/fetchData.js";
+import debounce from "../Utilities/debounce.js";
 
 const search = () => {
   const searchInput = document.querySelector(".search-input");
@@ -14,14 +15,10 @@ const search = () => {
   );
 };
 
-/* The solution here works on the cards that has already been 
-fetched and created to aviod creating new cards on each search
- operation, other soultions should be used for bigger data sets */
 const showMatched = (data) => {
-  const numOfCardsFound = document.querySelector("h2 span");
-  numOfCardsFound.textContent = `"${data.length}"`;
+  const grid = document.querySelector("main.grid");
+  const cards = grid.children;
 
-  const cards = document.querySelector("main.grid").children;
   const idSet = new Set();
 
   for (let i = 0; i < data.length; i++) {
@@ -38,15 +35,5 @@ const showMatched = (data) => {
     }
   }
 };
-
-function debounce(callback, wait) {
-  let timerId;
-  return (...args) => {
-    clearTimeout(timerId);
-    timerId = setTimeout(() => {
-      callback(...args);
-    }, wait);
-  };
-}
 
 export default search;

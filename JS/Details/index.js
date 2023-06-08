@@ -1,3 +1,4 @@
+import createStarRating from "../Utilities/createStarsRating.js";
 import fetchData from "../Utilities/fetchData.js";
 import addRemoveFavorites from "./addRemoveFavorites.js";
 
@@ -18,6 +19,9 @@ const populateDetalis = (data) => {
 
   const description = document.querySelector(".main-content p");
   description.append(data.description);
+
+  const rating = createStarRating(data.rating);
+  document.querySelector(".main-content .rating").append(rating);
 
   const image = document.querySelector(".card :nth-child(1)");
   image.style.backgroundImage = `url('../assets/${data.image}')`;

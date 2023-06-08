@@ -1,7 +1,10 @@
+import createStarsRating from "../Utilities/createStarsRating.js";
+
 const createCard = (data) => {
   const card = document.createElement("a");
   card.classList.add("card");
   card.setAttribute("cardId", `${data.id}`);
+  card.style.display = "flex";
 
   //attach event for user click to navigate to details
   card.addEventListener("click", () => {
@@ -11,7 +14,7 @@ const createCard = (data) => {
 
   const img = document.createElement("div");
   img.classList.add("card-content");
-  img.style.backgroundImage = `url('./assets/${data.image}')`;
+  img.style.backgroundImage = `url('../assets/${data.image}')`;
   card.appendChild(img);
 
   const info = document.createElement("div");
@@ -20,7 +23,7 @@ const createCard = (data) => {
 
   const categorie = document.createElement("h3");
   categorie.classList.add("card-info");
-  categorie.append(data.categorie);
+  categorie.append(data.category);
   info.appendChild(categorie);
 
   const topic = document.createElement("h4");
@@ -28,9 +31,7 @@ const createCard = (data) => {
   topic.append(data.topic);
   info.appendChild(topic);
 
-  const rating = document.createElement("div");
-  rating.classList.add("card-info", "rating");
-  rating.append(data.rating);
+  const rating = createStarsRating(data.rating);
   info.appendChild(rating);
 
   const authorName = document.createElement("h5");

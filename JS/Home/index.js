@@ -1,8 +1,12 @@
-import createAllCards from "./createAllCards.js";
+import renderCards from "./renderCards.js";
+import listenForEvents from "./listenForEvents.js";
 import fetchData from "../Utilities/fetchData.js";
-import search from "./search.js";
-import sort from "./sort.js";
+import updateCategories from "./updateCategories.js";
 
-fetchData(createAllCards, "https://tap-web-1.herokuapp.com/topics/list");
-search();
-sort();
+const firstMount = (data) => {
+  renderCards(data);
+  updateCategories(data);
+};
+
+fetchData(firstMount, "https://tap-web-1.herokuapp.com/topics/list");
+listenForEvents();

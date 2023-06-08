@@ -1,31 +1,13 @@
-import extractDataFromCard from "../Utilities/extractDataFromCard.js";
-import createAllCards from "./createAllCards.js";
-
-const sort = () => {
-  const cards = document.querySelector(".grid").children;
-
-  const sortSelect = document.querySelector(".search-select-1");
-  sortSelect.addEventListener("change", () => {
-    const data = getSortedData(cards);
-    console.log(data);
-  });
-};
-
-const getSortedData = (cards) => {
-  const data = [];
-
-  for (let i = 0; i < cards.length; i++) {
-    const card = cards[i];
-    data.push(extractDataFromCard(card));
-  }
+const sort = (data, sortType) => {
+  if (sortType === "default") return data;
 
   data.sort((a, b) => {
-    const nameA = a.name.toUpperCase(); // ignore upper and lowercase
-    const nameB = b.name.toUpperCase(); // ignore upper and lowercase
-    if (nameA < nameB) {
+    const cardA = a[sortType].toUpperCase(); // ignore upper and lowercase
+    const cardB = b[sortType].toUpperCase(); // ignore upper and lowercase
+    if (cardA < cardB) {
       return -1;
     }
-    if (nameA > nameB) {
+    if (cardA > cardB) {
       return 1;
     }
 
