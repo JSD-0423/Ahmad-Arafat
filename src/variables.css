@@ -1,0 +1,24 @@
+body {
+  --brand-primary: #0768ac;
+  --brand-secondary: #03c180;
+  --bg-default: #ffffff;
+  --bg-body: #f0f9ff;
+  --lines-color: #dddddd;
+  --body-text: #333333;
+  --heart-color: #dc143c;
+  --mobile-layout-padding: 15px;
+  --Desktop-layout-padding: 54px;
+  --tablet-layout-padding: 25px;
+  --shadow: #dddddd;
+  --details-dark-section: #282828;
+  --body-text-dark: #ededed;
+}
+
+body.dark {
+  --bg-default: #1a1a1a;
+  --bg-body: #282828;
+  --lines-color: #000000;
+  --body-text: #ededed;
+  --shadow: #1a1a1a;
+  --details-dark-section: #333333;
+}
