@@ -8,20 +8,24 @@
   padding-top: 5px;
 }
 
-/* .button-label {
-  display: none;
-} */
-
 @media only screen and (min-width: 900px) {
   .icon-button {
     border-radius: 5px;
     width: 113px;
-    padding-top: 5px;
-    padding-bottom: 5px;
     height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
     cursor: pointer;
+  }
+
+  .button-label {
+    display: inline;
+    font-size: 0.93rem;
+    cursor: pointer;
+    color: var(--body-text);
+    margin-left: 5px;
   }
 }

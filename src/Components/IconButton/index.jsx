@@ -1,10 +1,11 @@
 import "../../variables.css";
 import "./index.css";
 
-const IconButton = () => {
+const IconButton = ({ icon, text }) => {
   return (
     <button className="icon-button">
-      <label classsName="button-label">Favourites</label>
+      {icon}
+      <label className="button-label">{text}</label>
     </button>
   );
 };

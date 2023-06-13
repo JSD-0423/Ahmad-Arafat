@@ -1,0 +1,29 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--bg-body);
+  padding-left: var(--mobile-layout-padding);
+  padding-right: var(--mobile-layout-padding);
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: var(--body-text);
+  margin-top: 20px;
+  font-weight: 800;
+}
+
+@media only screen and (min-width: 900px) {
+  .home {
+    padding-left: var(--tablet-layout-padding);
+    padding-right: var(--tablet-layout-padding);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .home {
+    padding-left: var(--Desktop-layout-padding);
+    padding-right: var(--Desktop-layout-padding);
+  }
+}

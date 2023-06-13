@@ -1,0 +1,26 @@
+h1 {
+  color: var(--brand-primary);
+  font-size: 0.94rem;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+h6 {
+  font-size: 1.3rem;
+  color: var(--brand-secondary);
+  font-weight: 800;
+  margin: 8px 10px 0px 0px;
+  line-height: 0.8;
+}
+
+p {
+  font-weight: 200;
+  font-size: 1rem;
+  color: var(--body-text);
+}
+
+@media only screen and (min-width: 900px) {
+  h1 {
+    font-size: 1rem;
+  }
+}

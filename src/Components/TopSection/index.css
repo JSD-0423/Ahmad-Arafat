@@ -1,0 +1,72 @@
+.top-section {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-default);
+  padding-bottom: 18px;
+}
+
+.colorful-bar {
+  height: 25px;
+  position: relative;
+  background-color: var(--bg-default);
+}
+
+.left-colorful-bar {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    var(--brand-primary),
+    var(--brand-secondary)
+  );
+  background-size: 100% 100%;
+  clip-path: polygon(0% 0%, 0% 100%, 120% 0%);
+  z-index: 1;
+}
+
+.right-colorful-bar {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  background-color: var(--brand-secondary);
+  clip-path: polygon(100% 0%, 100% 100%, -20% 0%);
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  padding-left: var(--mobile-layout-padding);
+  padding-right: 20px;
+  padding-top: 4px;
+  z-index: 1;
+}
+
+.welcome p {
+  margin-right: 5px;
+}
+
+@media only screen and (min-width: 500px) {
+  .welcome {
+    align-self: center;
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .welcome {
+    margin-top: -20px;
+  }
+
+  .colorful-bar {
+    height: 67px;
+  }
+
+  .left-colorful-bar {
+    clip-path: polygon(0% 0%, 0% 100%, 100% 0%);
+  }
+
+  .right-colorful-bar {
+    clip-path: polygon(100% 0%, 100% 100%, 0% 0%);
+  }
+}
