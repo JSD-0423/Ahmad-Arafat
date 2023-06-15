@@ -1,12 +1,12 @@
 import "./index.css";
-import Card from "../Card";
+import LinkCard from "../LinkCard";
 
 const CardsGrid = ({ cardsData }) => {
   return (
     <main className="cards-grid">
       {cardsData.map((obj) => {
         return (
-          <Card
+          <LinkCard
             rating={obj.rating}
             name={obj.name}
             category={obj.category}

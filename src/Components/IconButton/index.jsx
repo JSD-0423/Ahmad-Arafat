@@ -1,9 +1,13 @@
-import "../../variables.css";
 import "./index.css";
 
-const IconButton = ({ icon, text }) => {
+const IconButton = ({ icon, text, clickAction }) => {
   return (
-    <button className="icon-button">
+    <button
+      onClick={() => {
+        if (clickAction) clickAction((prevState) => !prevState);
+      }}
+      className="icon-button"
+    >
       {icon}
       <label className="button-label">{text}</label>
     </button>
