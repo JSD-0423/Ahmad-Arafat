@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Ahmad-Arafat-project-1/static/css/main.b3ea3b3f.css",
-    "main.js": "/Ahmad-Arafat-project-1/static/js/main.d603d584.js",
+    "main.css": "/Ahmad-Arafat-project-1/static/css/main.0ab879d5.css",
+    "main.js": "/Ahmad-Arafat-project-1/static/js/main.031642da.js",
     "static/js/787.01929da9.chunk.js": "/Ahmad-Arafat-project-1/static/js/787.01929da9.chunk.js",
     "static/media/analytics.png": "/Ahmad-Arafat-project-1/static/media/analytics.7e81c6ec23532162f2ea.png",
     "static/media/angular.png": "/Ahmad-Arafat-project-1/static/media/angular.fe7fe0b7dad8f1ba6bbd.png",
@@ -40,12 +40,12 @@
     "static/media/expressjs.webp": "/Ahmad-Arafat-project-1/static/media/expressjs.2ae1dc58f7c5318ca228.webp",
     "static/media/react.webp": "/Ahmad-Arafat-project-1/static/media/react.55afe679a76823cdda39.webp",
     "index.html": "/Ahmad-Arafat-project-1/index.html",
-    "main.b3ea3b3f.css.map": "/Ahmad-Arafat-project-1/static/css/main.b3ea3b3f.css.map",
-    "main.d603d584.js.map": "/Ahmad-Arafat-project-1/static/js/main.d603d584.js.map",
+    "main.0ab879d5.css.map": "/Ahmad-Arafat-project-1/static/css/main.0ab879d5.css.map",
+    "main.031642da.js.map": "/Ahmad-Arafat-project-1/static/js/main.031642da.js.map",
     "787.01929da9.chunk.js.map": "/Ahmad-Arafat-project-1/static/js/787.01929da9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b3ea3b3f.css",
-    "static/js/main.d603d584.js"
+    "static/css/main.0ab879d5.css",
+    "static/js/main.031642da.js"
   ]
 }
