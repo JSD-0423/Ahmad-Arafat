@@ -1,7 +1,7 @@
 import Rating from "../Rating";
 import styles from "./index.module.css";
 
-const PresentationCard = ({ rating, topic, image, parentStyles }) => {
+const TopicSummeryCard = ({ rating, topic, image, parentStyles }) => {
   return (
     <div className={styles.card + " " + parentStyles}>
       <div
@@ -18,4 +18,4 @@ const PresentationCard = ({ rating, topic, image, parentStyles }) => {
   );
 };
 
-export default PresentationCard;
+export default TopicSummeryCard;

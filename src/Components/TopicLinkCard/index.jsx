@@ -2,9 +2,9 @@ import "./index.css";
 import Rating from "../Rating";
 import { Link } from "react-router-dom";
 
-const LinkCard = ({ rating, category, name, topic, image }) => {
+const TopicLinkCard = ({ rating, category, name, topic, image, id }) => {
   return (
-    <Link to={"/details"}>
+    <Link to={`/details/${id}`}>
       <div className="card card-1">
         <div
           className="card-content"
@@ -23,4 +23,4 @@ const LinkCard = ({ rating, category, name, topic, image }) => {
   );
 };
 
-export default LinkCard;
+export default TopicLinkCard;

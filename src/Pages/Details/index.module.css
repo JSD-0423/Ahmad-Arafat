@@ -1,8 +1,8 @@
-h1 {
+.container h1 {
   font-size: 1.2rem;
 }
 
-.details {
+.container {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -10,7 +10,7 @@ h1 {
   padding: 0;
 }
 
-.details-main-content:nth-child(1) {
+.descreption-container {
   background-color: var(--details-dark-section);
   padding: 20px 0 20px 0;
   display: flex;
@@ -18,15 +18,15 @@ h1 {
   align-items: center;
 }
 
-.details-main-content:nth-child(2) {
+/* .details-main-content:nth-child(2) {
   align-self: center;
   margin-top: 10px;
   border-radius: 0;
   background-color: var(--bg-default);
   padding: 0 2px 0 2px;
-}
+} */
 
-.details p {
+.container p {
   font-size: 1rem;
   font-weight: 700;
   color: var(--body-text-dark);
@@ -36,7 +36,7 @@ h1 {
   padding-left: 40px;
 }
 
-.details h3 {
+.container h3 {
   color: var(--brand-secondary);
   font-size: 1rem;
   font-weight: 700;
@@ -44,7 +44,7 @@ h1 {
   width: auto;
 }
 
-.details h2 {
+.container h2 {
   color: var(--body-text-dark);
   margin-top: 20px;
 }
@@ -53,94 +53,78 @@ h1 {
     margin-left: 5px;
   } */
 
-details .card {
+.card {
   width: 400px;
   margin-top: 50px;
   background-color: #ffffff;
   box-shadow: 0px 0px 4px 0px var(--shadow);
 }
 
-.details h4 {
-  display: inline;
-  color: #333333;
-}
-
-table {
-  background-color: var(--bg-default);
-  border: 1px solid var(--lines-color);
+.table {
   width: 400px;
   margin-top: 50px;
-  border-radius: 5px 5px 5px 5px;
   margin-left: 0;
 }
 
-tr:nth-child(1) td {
-  border-top-width: 0;
-  font-size: 1.6rem;
-  font-weight: 700;
-}
-
-td {
+.loading {
   display: flex;
   align-items: center;
-  border-width: 1px 0 0 0;
-  border-style: solid;
-  border-color: var(--lines-color);
-  padding: 15px 0px 15px 30px;
-  color: var(--body-text);
-  font-size: 1rem;
-}
-
-td ion-icon {
-  font-size: 24px;
-  color: var(--brand-secondary);
-  margin-right: 15px;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 500px) {
-  table {
+  .card,
+  .table {
     width: 95%;
   }
 }
 
 @media only screen and (min-width: 900px) {
-  .details-card {
+  .descreption-container,
+  .container {
+    align-items: start;
+  }
+
+  .descreption-container {
+    padding: 30px 3% 30px 19%;
+  }
+
+  .container h3 {
+    width: calc(95%);
+    align-self: self-start;
+  }
+
+  .container h2 {
+    margin-top: 1px;
+  }
+  .container p {
+    width: 48%;
+    padding: 0;
+  }
+
+  .card {
+    width: 320px;
     right: 6%;
     top: 26px;
     position: absolute;
     margin: 0;
   }
 
-  .details-main-content:nth-child(1),
-  .details {
-    align-items: start;
-  }
-
-  .details-main-content:nth-child(1) {
-    padding: 30px 3% 30px 19%;
-  }
-
-  .details table {
+  .table {
     margin-left: 19%;
     width: 37%;
     margin-top: 30px;
   }
+}
 
-  .details h3 {
-    width: calc(95%);
-    align-self: self-start;
+@media only screen and (min-width: 1200px) {
+  .card {
+    right: 15%;
   }
+}
 
-  .details h2 {
-    margin-top: 1px;
-  }
-
-  /* .big-icon-button ion-icon {
-    margin: 0;
-  } */
-
-  .details p {
-    width: 48%;
-    padding: 0;
+@media only screen and (min-width: 1400px) {
+  .card {
+    right: 19%;
   }
 }

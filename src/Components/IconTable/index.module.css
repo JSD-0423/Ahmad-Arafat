@@ -1,0 +1,29 @@
+table {
+  background-color: var(--bg-default);
+  border: 1px solid var(--lines-color);
+  border-radius: 5px 5px 5px 5px;
+  width: 100%;
+}
+
+tr:nth-child(1) td {
+  border-top-width: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+td {
+  display: flex;
+  align-items: center;
+  border-width: 1px 0 0 0;
+  border-style: solid;
+  border-color: var(--lines-color);
+  padding: 15px 0px 15px 30px;
+  color: var(--body-text);
+  font-size: 1rem;
+}
+
+td ion-icon {
+  font-size: 24px;
+  color: var(--brand-secondary);
+  margin-right: 15px;
+}
