@@ -1,6 +1,7 @@
 import styles from "./index.module.css";
 import TopicSummeryCard from "../TopicSummeryCard";
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
+import ThemeContext from "../../contexts/ThemeContext";
 
 const Favourites = ({ visibale, cardsData, setFavCards }) => {
   // handle local storage
@@ -14,9 +15,12 @@ const Favourites = ({ visibale, cardsData, setFavCards }) => {
     setFavCards(JSON.parse(localStorage.getItem("favourites")));
   }, []);
 
+  const theme = useContext(ThemeContext);
   return (
     <section
-      className={`${styles.favourites} ${visibale ? styles.show : styles.hide}`}
+      className={`${styles.favourites} ${
+        visibale ? styles.show : styles.hide
+      } ${theme}`}
     >
       <h4>My Favourite Topics</h4>
       <div className={styles.grid}>

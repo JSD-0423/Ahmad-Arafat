@@ -4,7 +4,7 @@ const IconButton = ({ icon, text, clickAction }) => {
   return (
     <button
       onClick={() => {
-        if (clickAction) clickAction((prevState) => !prevState);
+        if (clickAction) clickAction();
       }}
       className="icon-button"
     >

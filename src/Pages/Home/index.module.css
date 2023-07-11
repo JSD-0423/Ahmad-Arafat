@@ -1,10 +1,11 @@
-.container {
+main {
   display: flex;
   flex-direction: column;
   width: 100%;
   background-color: var(--bg-body);
   padding-left: var(--mobile-layout-padding);
   padding-right: var(--mobile-layout-padding);
+  min-height: 900px;
 }
 
 h2 {

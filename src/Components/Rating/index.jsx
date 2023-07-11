@@ -4,7 +4,7 @@ import "./index.css";
 
 const Rating = ({ rating, size }) => {
   return (
-    <div className="rating card-info">
+    <div className="rating">
       {convertRatingToStars(rating).map((num) => (
         <IoStar size={size} className="star" key={num} />
       ))}

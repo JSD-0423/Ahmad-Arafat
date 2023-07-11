@@ -1,4 +1,8 @@
-body {
+body,
+main.light,
+header.light,
+footer.light,
+section.light {
   --brand-primary: #0768ac;
   --brand-secondary: #03c180;
   --bg-default: #ffffff;
@@ -14,7 +18,11 @@ body {
   --body-text-dark: #ededed;
 }
 
-body.dark {
+body.dark,
+main.dark,
+header.dark,
+footer.dark,
+section.dark {
   --bg-default: #1a1a1a;
   --bg-body: #282828;
   --lines-color: #000000;

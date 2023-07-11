@@ -15,7 +15,9 @@ const TopicLinkCard = ({ rating, category, name, topic, image, id }) => {
         <div className="card-content">
           <h3 className="card-info">{category}</h3>
           <h4 className="card-info">{topic}</h4>
-          <Rating className="card-info" rating={rating} size={15} />
+          <div className="card-info">
+            <Rating rating={rating} size={15} />
+          </div>
           <h5 className="card-info">Author: {name}</h5>
         </div>
       </div>

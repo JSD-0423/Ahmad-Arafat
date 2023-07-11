@@ -4,10 +4,12 @@ import styles from "./index.module.css";
 import { AiOutlineHeart } from "react-icons/ai";
 import IconTable from "../../Components/IconTable";
 import { useParams } from "react-router-dom";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import useAPI from "../../utils/useAPI";
 import { FadeLoader } from "react-spinners";
 import LoadingError from "../../Components/Errors/LoadingError";
+import ThemeContext from "../../contexts/ThemeContext";
+import { BsCheckCircle } from "react-icons/bs";
 
 const Details = ({ setFavCards, favCards }) => {
   const cardId = useParams().id;
@@ -21,6 +23,8 @@ const Details = ({ setFavCards, favCards }) => {
     setError
   );
 
+  const theme = useContext(ThemeContext);
+
   const loaderOverride = {
     margin: "auto",
   };
@@ -28,11 +32,17 @@ const Details = ({ setFavCards, favCards }) => {
   if (cradDetails)
     return (
       <>
-        <main className={loading ? styles.loading : styles.container}>
+        <main
+          className={`${theme} ${loading ? styles.loading : styles.container}`}
+        >
           <div className={styles["descreption-container"]}>
             <h3>{cradDetails.category}</h3>
             <h2>{cradDetails.topic}</h2>
-            <Rating size={17} rating={cradDetails.rating} />
+            <Rating
+              size={17}
+              className={styles.rating}
+              rating={cradDetails.rating}
+            />
             <p>{cradDetails.description}</p>
           </div>
           <div className={styles.card}>
@@ -49,7 +59,16 @@ const Details = ({ setFavCards, favCards }) => {
             />
           </div>
           <div className={styles.table}>
-            <IconTable />
+            <IconTable
+              icon={
+                <BsCheckCircle
+                  className={styles.icon}
+                  color="#03c180"
+                  size={18}
+                />
+              }
+              data={cradDetails}
+            />
           </div>
         </main>
       </>

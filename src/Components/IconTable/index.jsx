@@ -1,29 +1,22 @@
 import "./index.module.css";
 
-const IconTable = () => {
+const IconTable = ({ data, icon }) => {
   return (
     <table>
-      <tr>
-        <td>{"HTML"} Sub Topics</td>
-      </tr>
-      <tr>
-        <td>hgd</td>
-      </tr>
-      <tr>
-        <td>hdg</td>
-      </tr>
-      <tr>
-        <td>hdg</td>
-      </tr>
-      <tr>
-        <td>hdg</td>
-      </tr>
-      <tr>
-        <td>hffg</td>
-      </tr>
-      <tr>
-        <td>hds</td>
-      </tr>
+      <tbody>
+        <tr>
+          <td>{data.topic} Sub Topics</td>
+        </tr>
+        {data.subtopics.map((subtopic, index) => {
+          return (
+            <tr key={index}>
+              <td>
+                {icon} {subtopic}
+              </td>
+            </tr>
+          );
+        })}
+      </tbody>
     </table>
   );
 };

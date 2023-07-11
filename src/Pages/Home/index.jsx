@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import SearchBar from "../../Components/SearchBar";
 import TopicLinkCard from "../../Components/TopicLinkCard";
 import styles from "./index.module.css";
@@ -8,6 +8,7 @@ import sort from "./Helpers/sort";
 import filter from "./Helpers/filter";
 import { ClipLoader } from "react-spinners";
 import LoadingError from "../../Components/Errors/LoadingError";
+import ThemeContext from "../../contexts/ThemeContext";
 import debounce from "../../utils/debounce";
 
 const Home = () => {
@@ -34,13 +35,16 @@ const Home = () => {
     setURL(`https://tap-web-1.herokuapp.com/topics/list?phrase=${searchText}`);
   }, [searchText]);
 
+  //theme
+  const theme = useContext(ThemeContext);
+
   //loader css
   const loaderOverride = {
     margin: "auto",
   };
 
   return (
-    <div className={styles.container}>
+    <main className={`${theme}`}>
       <SearchBar
         searchText={searchText}
         filterValue={filterValue}
@@ -56,7 +60,7 @@ const Home = () => {
         </span>{" "}
         Web Topics Found
       </h2>
-      <main className={loading ? styles.loading : styles.grid}>
+      <div className={loading ? styles.loading : styles.grid}>
         {loading ? (
           <ClipLoader
             loading={loading}
@@ -81,8 +85,8 @@ const Home = () => {
             );
           })
         )}
-      </main>
-    </div>
+      </div>
+    </main>
   );
 };
 
