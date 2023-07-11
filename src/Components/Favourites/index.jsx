@@ -27,7 +27,6 @@ const Favourites = ({ visibale, cardsData, setFavCards }) => {
               rating={data.rating}
               topic={data.topic}
               key={data.id}
-              parentStyles={styles.card}
             />
           ))}
       </div>

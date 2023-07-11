@@ -1,9 +1,9 @@
 import Rating from "../Rating";
 import styles from "./index.module.css";
 
-const TopicSummeryCard = ({ rating, topic, image, parentStyles }) => {
+const TopicSummeryCard = ({ rating, topic, image }) => {
   return (
-    <div className={styles.card + " " + parentStyles}>
+    <div className={styles.card}>
       <div
         style={{
           backgroundImage: `url(${require(`../../assets/images/${image}`)})`,

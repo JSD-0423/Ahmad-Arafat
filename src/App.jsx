@@ -6,29 +6,20 @@ import TopSection from "./Components/TopSection";
 import Header from "./Components/Header";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Favourites from "./Components/Favourites";
-import { Suspense, useEffect, useState } from "react";
-import { GridLoader, PulseLoader } from "react-spinners";
+import { useState } from "react";
+import { createContext } from "react";
 
 function App() {
   const [favState, setFavState] = useState(false);
-  const [favCards, setFavCards] = useState([]);
+  const [favCards, setFavCards] = useState(null);
 
-  useEffect(() => {
-    console.log(favCards, "favCards");
-  }, [favCards]);
   return (
-    <BrowserRouter>
+    // <ThemeContext.Provider value={theme}>
+    <BrowserRouter basename="/Ahmad-Arafat-project-1">
       <Header setFavState={setFavState} />
       <TopSection />
       <Routes>
-        <Route
-          path="/"
-          element={
-            <Suspense fallback={<GridLoader loading={true} />}>
-              <Home />
-            </Suspense>
-          }
-        />
+        <Route path="/" element={<Home />} />
         <Route
           path="/details/:id"
           element={<Details setFavCards={setFavCards} favCards={favCards} />}
@@ -40,6 +31,7 @@ function App() {
         setFavCards={setFavCards}
       />
     </BrowserRouter>
+    // </ThemeContext.Provider>
   );
 }
 

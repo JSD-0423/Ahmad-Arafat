@@ -40,10 +40,6 @@
   gap: 20px;
 }
 
-.card {
-  min-width: 120px;
-}
-
 @media only screen and (min-width: 500px) {
   .favourites {
     align-items: flex-start;
